@@ -17,7 +17,23 @@ export default function ButtonAppBar() {
 
   return (
     <div>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
+        <Button
+          size="small"
+          aria-label="account of current user"
+          color="inherit"
+          onClick={collapse}
+          sx={{
+            display: { sm: "none", md: "block" },
+            width: "fit-content",
+            position: "relative",
+            left: "2rem",
+            top: "0.3rem",
+            height: "100%",
+          }}
+        >
+          <img src={avatar} style={{ maxHeight: "auto" }} />
+        </Button>
         <Container maxWidth="lg">
           <AppBar
             position="static"
@@ -57,7 +73,7 @@ export default function ButtonAppBar() {
                   color="primary"
                   sx={{
                     ":hover": {
-                      bgcolor: "rgba(255,255,255,0.1)", // theme.palette.primary.main
+                      bgcolor: "rgba(255,255,255,0.1)",
                       color: "white",
                     },
                   }}
