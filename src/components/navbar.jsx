@@ -16,82 +16,86 @@ export default function ButtonAppBar() {
   }
 
   return (
-    <div>
-      <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
-        <Button
-          size="small"
-          aria-label="account of current user"
-          color="inherit"
-          onClick={collapse}
+    <AppBar
+      position="absolute"
+      sx={{
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        backgroundColor: "white",
+      }}
+    >
+      <Button
+        size="small"
+        aria-label="account of current user"
+        color="inherit"
+        onClick={collapse}
+        sx={{
+          display: { sm: "none", md: "block" },
+          width: "fit-content",
+          position: "relative",
+          left: "2rem",
+          top: "0.3rem",
+          height: "100%",
+        }}
+      >
+        <img src={avatar} style={{ height: "50px" }} />
+      </Button>
+      <Container maxWidth="lg">
+        <Box
           sx={{
-            display: { sm: "none", md: "block" },
-            width: "fit-content",
-            position: "relative",
-            left: "2rem",
-            top: "0.3rem",
-            height: "100%",
+            borderRadius: "25px",
+            margin: "1rem",
+            padding: "0.2rem 1rem",
+            display: "flex",
+            flexDirection: { sm: "column", md: "row" },
+            backgroundColor: "black",
           }}
         >
-          <img src={avatar} style={{ height: "50px" }} />
-        </Button>
-        <Container maxWidth="lg">
-          <AppBar
-            position="static"
-            color="secondary"
+          <Button
+            size="small"
+            aria-label="account of current user"
+            color="inherit"
+            onClick={collapse}
             sx={{
-              borderRadius: "25px",
-              margin: "1rem",
-              padding: "0.2rem 1rem",
-              display: "flex",
-              flexDirection: { sm: "column", md: "row" },
-              backgroundColor: "black",
+              display: { sm: "block", md: "none" },
+              width: "fit-content",
+              margin: "auto",
             }}
           >
-            <Button
-              size="small"
-              aria-label="account of current user"
-              color="inherit"
-              onClick={collapse}
-              sx={{
-                display: { sm: "block", md: "none" },
-                width: "fit-content",
-                margin: "auto",
-              }}
-            >
-              <img src={avatar} style={{ maxHeight: "50px" }} />
-            </Button>
-            <Box
-              sx={{
-                width: "100%",
-                display: { sm: collapsed ? "none" : "flex", md: "flex" },
-                flexDirection: { sm: "column", md: "row" },
-                justifyContent: "space-evenly",
-              }}
-            >
-              {options.map((el) => (
-                <Button
-                  color="primary"
-                  sx={{
-                    ":hover": {
-                      bgcolor: "rgba(255,255,255,0.1)",
-                      color: "white",
-                    },
-                  }}
+            <img src={avatar} style={{ maxHeight: "50px" }} />
+          </Button>
+          <Box
+            sx={{
+              width: "100%",
+              display: { sm: collapsed ? "none" : "flex", md: "flex" },
+              flexDirection: { sm: "column", md: "row" },
+              justifyContent: "space-evenly",
+            }}
+          >
+            {options.map((el) => (
+              <Button
+                color="primary"
+                sx={{
+                  ":hover": {
+                    bgcolor: "rgba(255,255,255,0.1)",
+                    color: "white",
+                  },
+                }}
+              >
+                <Typography
+                  variant="h6"
+                  component="a"
+                  href="#"
+                  sx={{ flexGrow: 1, color: "white", textDecoration: "none" }}
                 >
-                  <Typography
-                    variant="h6"
-                    component="a"
-                    href="#"
-                    sx={{ flexGrow: 1, color: "white", textDecoration: "none" }}
-                  >
-                    {el}
-                  </Typography>
-                </Button>
-              ))}
-            </Box>
-          </AppBar>
-        </Container>
-      </Box>
-    </div>
+                  {el}
+                </Typography>
+              </Button>
+            ))}
+          </Box>
+        </Box>
+      </Container>
+    </AppBar>
   );
 }
