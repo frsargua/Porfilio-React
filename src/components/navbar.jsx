@@ -32,7 +32,7 @@ export default function ButtonAppBar() {
             height: "100%",
           }}
         >
-          <img src={avatar} style={{ maxHeight: "auto" }} />
+          <img src={avatar} style={{ height: "50px" }} />
         </Button>
         <Container maxWidth="lg">
           <AppBar
