@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import backgroundImage from "../images/bg.jpg";
 import { Grid, Paper } from "@mui/material";
 import { Box, Container } from "@mui/system";
+import InteractiveList from "./list";
 
 export default function PageHero() {
   return (
@@ -17,7 +18,6 @@ export default function PageHero() {
           md={4}
           alt="increase priority"
           sx={{
-            height: "100vh",
             display: "flex",
             alignItems: "center",
           }}
@@ -39,9 +39,12 @@ export default function PageHero() {
             height: "100vh",
             objectFit: "cover",
             zIndex: "0",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          2
+          <InteractiveList></InteractiveList>
         </Grid>
       </Grid>
     </Container>
