@@ -9,12 +9,17 @@ import InteractiveList from "./list";
 export default function PageHero() {
   return (
     <Container maxWidth="xl">
-      <Grid container direction="row" columnSpacing={6}>
+      <Grid
+        container
+        direction="row"
+        columnSpacing={6}
+        justifyContent="space-around"
+      >
         {/* Increase the network loading priority of the background image. */}
         <Grid
           item
           component="div"
-          md={4}
+          md={3}
           alt="increase priority"
           sx={{
             display: "flex",
@@ -33,7 +38,7 @@ export default function PageHero() {
           item
           component="div"
           sm={12}
-          md={8}
+          md={7}
           sx={{
             height: "100vh",
             zIndex: "0",
@@ -43,9 +48,6 @@ export default function PageHero() {
             alignItems: "center",
           }}
         >
-          <Typography variant="h2" component="h5" alignSelf="self-start">
-            About me
-          </Typography>
           <Typography variant="h5" component="p">
             A full-stack web developer majored in Chemistry. Having achieved a
             full-stack certificate from the University of Birmingham Coding
@@ -54,6 +56,11 @@ export default function PageHero() {
             independently. In addition, to being a strong problem solver thanks
             to my STEM degree, which allowed me to be a fast learner.
           </Typography>
+          <Paper
+            elevation={3}
+            variant="outlined"
+            sx={{ width: "100%", margin: " 2rem 0 0rem 0" }}
+          />
           <InteractiveList></InteractiveList>
         </Grid>
       </Grid>
