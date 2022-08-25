@@ -9,7 +9,7 @@ import InteractiveList from "./list";
 export default function PageHero() {
   return (
     <Container maxWidth="xl">
-      <Grid container direction="row" columnSpacing={4}>
+      <Grid container direction="row" columnSpacing={6}>
         {/* Increase the network loading priority of the background image. */}
         <Grid
           item
@@ -43,7 +43,10 @@ export default function PageHero() {
             alignItems: "center",
           }}
         >
-          <Typography variant="h5" component="p" maxWidth="md">
+          <Typography variant="h2" component="h5" alignSelf="self-start">
+            About me
+          </Typography>
+          <Typography variant="h5" component="p">
             A full-stack web developer majored in Chemistry. Having achieved a
             full-stack certificate from the University of Birmingham Coding
             Bootcamp. Adaptable and logic driven problem solver, with strong
