@@ -29,116 +29,81 @@ const Demo = styled("div")(({ theme }) => ({
 }));
 
 export default function InteractiveList() {
-  let languagesArr = ["HTML5", "CSS3", "JavaScript"];
-  let OthersArr = ["Node.js", "Git", "Heroku", "Handlebars.js"];
-  let frameworksArr = [
-    "React",
-    "jQuery",
-    "Bootstrap",
-    "MaterialUI",
-    "Express.js",
+  let skillsObs = [
+    {
+      show: false,
+      name: "Languages",
+      arr: ["HTML5", "CSS3", "JavaScript"],
+    },
+    {
+      show: false,
+
+      name: "Others",
+      arr: ["Node.js", "Git", "Heroku", "Handlebars.js"],
+    },
+    {
+      show: false,
+
+      name: "Frameworks",
+      arr: ["React", "jQuery", "Bootstrap", "MaterialUI", "Express.js"],
+    },
+    {
+      show: false,
+      name: "Databases",
+      arr: ["MySQL", "Sequelize", "MongoDB", "Mongoose", "GraphQl"],
+    },
   ];
-  let DatabasesArr = ["MySQL", "Sequelize", "MongoDB", "Mongoose", "GraphQl"];
-  const [dense, setDense] = React.useState(false);
-  const [secondary, setSecondary] = React.useState(false);
+
+  const [skills, updateShow] = React.useState(skillsObs);
+
+  function collapse(name) {
+    updateShow((prev) => {
+      return prev.map((el) => {
+        if (el.name === name) {
+          return { ...el, show: !el.show };
+        }
+        return el;
+      });
+    });
+  }
 
   return (
     <Box sx={{ flexGrow: 1, maxWidth: 752 }}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={3}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            LANGUAGES
-          </Typography>
-          <Demo>
-            <List dense={dense}>
-              {languagesArr.map((el) => {
-                return (
-                  <ListItem>
-                    <ListItemAvatar>
-                      <Avatar>
-                        <FolderIcon />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText
-                      primary={el}
-                      secondary={secondary ? "Secondary text" : null}
-                    />
-                  </ListItem>
-                );
-              })}
-            </List>
-          </Demo>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            OTHER
-          </Typography>
-          <Demo>
-            <List dense={dense}>
-              {OthersArr.map((el) => {
-                return (
-                  <ListItem>
-                    <ListItemAvatar>
-                      <Avatar>
-                        <FolderIcon />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText
-                      primary={el}
-                      secondary={secondary ? "Secondary text" : null}
-                    />
-                  </ListItem>
-                );
-              })}
-            </List>
-          </Demo>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            DATABASES
-          </Typography>
-          <Demo>
-            <List dense={dense}>
-              {DatabasesArr.map((el) => {
-                return (
-                  <ListItem>
-                    <ListItemAvatar>
-                      <Avatar>
-                        <FolderIcon />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText
-                      primary={el}
-                      secondary={secondary ? "Secondary text" : null}
-                    />
-                  </ListItem>
-                );
-              })}
-            </List>
-          </Demo>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-            FRAMEWORKS
-          </Typography>
-          <Demo>
-            <List dense={dense}>
-              {frameworksArr.map((el) => {
-                return (
-                  <ListItem>
-                    <ListItemIcon>
-                      <FolderIcon />
-                    </ListItemIcon>
-                    <ListItemText
-                      primary={el}
-                      secondary={secondary ? "Secondary text" : null}
-                    />
-                  </ListItem>
-                );
-              })}
-            </List>
-          </Demo>
-        </Grid>
+        {skills.map(({ name, arr, show }) => {
+          return (
+            <Grid item xs={12} md={3}>
+              <Typography
+                sx={{ mt: 4, mb: 2 }}
+                variant="h6"
+                component="div"
+                onClick={() => {
+                  collapse(name);
+                }}
+              >
+                {name}
+              </Typography>
+              <Demo
+                sx={{ display: { sm: show ? "block" : "none", md: "block" } }}
+              >
+                <List dense="true">
+                  {arr.map((val) => {
+                    return (
+                      <ListItem>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <FolderIcon />
+                          </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary={val} />
+                      </ListItem>
+                    );
+                  })}
+                </List>
+              </Demo>
+            </Grid>
+          );
+        })}
       </Grid>
     </Box>
   );
