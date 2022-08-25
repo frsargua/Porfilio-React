@@ -8,7 +8,8 @@ import InteractiveList from "./list";
 
 export default function PageHero() {
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="xl" id="hero--container">
+      <div id="text">Home</div>
       <Grid
         container
         direction="row"
