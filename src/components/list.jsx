@@ -68,7 +68,7 @@ export default function InteractiveList() {
   }
 
   return (
-    <Box sx={{ flexGrow: 1, maxWidth: 752 }}>
+    <Box sx={{ width: "100%", height: "auto" }}>
       <Grid container spacing={2}>
         {skills.map(({ name, arr, show }) => {
           return (
