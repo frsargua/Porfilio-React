@@ -10,7 +10,6 @@ import { Container } from "@mui/material";
 
 export default function ButtonAppBar(props) {
   const [collapsed, setCollapse] = React.useState(true);
-  let options = ["HOME", "PORFOLIO", "ABOUT ME", "CONTACT ME"];
   function collapse() {
     setCollapse((prev) => !prev);
   }
@@ -74,7 +73,7 @@ export default function ButtonAppBar(props) {
               justifyContent: "space-evenly",
             }}
           >
-            {options.map((el) => (
+            {props.options.map((el) => (
               <Button
                 color="primary"
                 onClick={() => props.handlePageChange(el)}

@@ -8,6 +8,7 @@ import Footer from "./footer";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
+  let options = ["HOME", "PORFOLIO", "ABOUT ME", "CONTACT ME"];
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
@@ -31,6 +32,7 @@ export default function PortfolioContainer() {
       <ButtonAppBar
         currentPage={currentPage}
         handlePageChange={handlePageChange}
+        options={options}
       />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
