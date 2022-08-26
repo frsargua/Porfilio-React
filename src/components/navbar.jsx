@@ -8,7 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import avatar from "../images/avatar.png";
 import { Container } from "@mui/material";
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props) {
   const [collapsed, setCollapse] = React.useState(true);
   let options = ["HOME", "PORFOLIO", "ABOUT ME", "CONTACT ME"];
   function collapse() {
@@ -77,6 +77,7 @@ export default function ButtonAppBar() {
             {options.map((el) => (
               <Button
                 color="primary"
+                onClick={() => props.handlePageChange(el)}
                 sx={{
                   ":hover": {
                     bgcolor: "rgba(255,255,255,0.1)",
