@@ -1,9 +1,9 @@
-import PageHero from "../hero";
+import React from "react";
 
 export default function Porfolio() {
   return (
     <div>
-      <PageHero></PageHero>
+      <h1>Porfolio</h1>
     </div>
   );
 }
