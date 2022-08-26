@@ -23,6 +23,7 @@ export default function ButtonAppBar() {
         flexDirection: "row",
         alignItems: "center",
         backgroundColor: "white",
+        boxShadow: "none",
       }}
     >
       <Button
