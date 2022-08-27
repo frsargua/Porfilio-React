@@ -68,43 +68,41 @@ export default function InteractiveList() {
   }
 
   return (
-    <Box sx={{ width: "100%", height: "auto" }}>
-      <Grid container spacing={2}>
-        {skills.map(({ name, arr, show }) => {
-          return (
-            <Grid item xs={12} md={3}>
-              <Typography
-                sx={{ mt: 4, mb: 2 }}
-                variant="h6"
-                component="div"
-                onClick={() => {
-                  collapse(name);
-                }}
-              >
-                {name}
-              </Typography>
-              <Demo
-                sx={{ display: { sm: show ? "block" : "none", md: "block" } }}
-              >
-                <List dense="true">
-                  {arr.map((val) => {
-                    return (
-                      <ListItem>
-                        <ListItemAvatar>
-                          <Avatar>
-                            <FolderIcon />
-                          </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary={val} />
-                      </ListItem>
-                    );
-                  })}
-                </List>
-              </Demo>
-            </Grid>
-          );
-        })}
-      </Grid>
-    </Box>
+    <Grid width="50%" container>
+      {skills.map(({ name, arr, show }) => {
+        return (
+          <Grid item xs={12} md={6}>
+            <Typography
+              sx={{ mt: 4, mb: 2 }}
+              variant="h6"
+              component="div"
+              onClick={() => {
+                collapse(name);
+              }}
+            >
+              {name}
+            </Typography>
+            <Demo
+              sx={{ display: { sm: show ? "block" : "none", md: "block" } }}
+            >
+              <List dense="true">
+                {arr.map((val) => {
+                  return (
+                    <ListItem>
+                      <ListItemAvatar>
+                        <Avatar>
+                          <FolderIcon />
+                        </Avatar>
+                      </ListItemAvatar>
+                      <ListItemText primary={val} />
+                    </ListItem>
+                  );
+                })}
+              </List>
+            </Demo>
+          </Grid>
+        );
+      })}
+    </Grid>
   );
 }
