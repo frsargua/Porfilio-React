@@ -13,7 +13,7 @@ export default function PageHero() {
         sx={{
           display: { sm: "none", md: "block" },
           position: "sticky",
-          top: "25%",
+          top: "35%",
           margin: "11rem 0",
         }}
       >
