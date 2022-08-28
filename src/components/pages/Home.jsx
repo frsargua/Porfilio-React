@@ -1,8 +1,9 @@
-import { Container, Grid, Typography, Paper } from "@mui/material";
+import { Container, Grid, Typography, Paper, Toolbar } from "@mui/material";
 import PageHero from "../PageHero";
 import InteractiveList from "../InteractiveList";
 import backgroundImage from "../../images/bg.jpg";
 import "../../App.css";
+import { Box } from "@mui/system";
 
 export default function Home() {
   return (
@@ -16,17 +17,27 @@ export default function Home() {
           justifyContent="center"
           alignItems="center"
         >
-          <Paper
-            elevation="4"
-            variant="elevation"
-            component="img"
-            src={backgroundImage}
-            sx={{
-              width: "50%",
-              borderRadius: "50%",
-              margin: { sm: "5rem 0", md: "11rem 0" },
+          <Box
+            style={{
+              height: "80vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "20vh",
             }}
-          />
+          >
+            <Paper
+              elevation="4"
+              variant="elevation"
+              component="img"
+              src={backgroundImage}
+              sx={{
+                width: "60%",
+                borderRadius: "50%",
+                margin: { md: "auto 0" },
+              }}
+            />
+          </Box>
           <Typography
             variant="h5"
             component="p"
