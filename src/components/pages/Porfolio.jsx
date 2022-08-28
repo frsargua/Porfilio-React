@@ -2,13 +2,15 @@ import React from "react";
 import PorfolioCard from "../card";
 import { largeProjects, smallProjects } from "../../porfolioData";
 import { Container } from "@mui/system";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 export default function Porfolio() {
   return (
     <>
-      <h1>Porfolio</h1>
-      <Container>
+      <Container className="block--top__1">
+        <Typography variant="h2" component="h5" textAlign="center" gutterBottom>
+          Porfolio
+        </Typography>
         <Grid
           container
           spacing={7}
