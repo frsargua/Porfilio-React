@@ -1,28 +1,17 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Avatar from "@mui/material/Avatar";
-import IconButton from "@mui/material/IconButton";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import FolderIcon from "@mui/icons-material/Folder";
-import DeleteIcon from "@mui/icons-material/Delete";
-
-function generate(arr, element) {
-  return arr.map((value) =>
-    React.cloneElement(element, {
-      key: value,
-    })
-  );
-}
+import Paper from "@mui/material/Paper";
+import git from "../images/logos/git.png";
+import graphql from "../images/logos/graphql.png";
+import html from "../images/logos/html.png";
+import javascript from "../images/logos/javascript.png";
 
 const Demo = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -33,24 +22,95 @@ export default function InteractiveList() {
     {
       show: false,
       name: "Languages",
-      arr: ["HTML5", "CSS3", "JavaScript"],
+      arr: [
+        {
+          name: "HTML5",
+          icon: html,
+        },
+        {
+          name: "CSS3",
+          icon: html,
+        },
+        {
+          name: "JavaScript",
+          icon: javascript,
+        },
+      ],
     },
     {
       show: false,
-
       name: "Others",
-      arr: ["Node.js", "Git", "Heroku", "Handlebars.js"],
+      arr: [
+        {
+          name: "Node.js",
+          icon: git,
+        },
+        {
+          name: "Git",
+          icon: git,
+        },
+        {
+          name: "Heroku",
+          icon: "../images/logos/git.png",
+        },
+        {
+          name: "Handlebars.js",
+          icon: "../images/logos/git.png",
+        },
+      ],
     },
     {
       show: false,
 
       name: "Frameworks",
-      arr: ["React", "jQuery", "Bootstrap", "MaterialUI", "Express.js"],
+      arr: [
+        {
+          name: "React",
+          icon: git,
+        },
+        {
+          name: "jQuery",
+          icon: git,
+        },
+        {
+          name: "Bootstrap",
+          icon: git,
+        },
+        {
+          name: "MaterialUI",
+          icon: git,
+        },
+        {
+          name: "Express.js",
+          icon: git,
+        },
+      ],
     },
     {
       show: false,
       name: "Databases",
-      arr: ["MySQL", "Sequelize", "MongoDB", "Mongoose", "GraphQl"],
+      arr: [
+        {
+          name: "MySQL",
+          icon: graphql,
+        },
+        {
+          name: "Sequelize",
+          icon: graphql,
+        },
+        {
+          name: "MongoDB",
+          icon: graphql,
+        },
+        {
+          name: "Mongoose",
+          icon: graphql,
+        },
+        {
+          name: "GraphQl",
+          icon: graphql,
+        },
+      ],
     },
   ];
 
@@ -68,10 +128,10 @@ export default function InteractiveList() {
   }
 
   return (
-    <Grid width="50%" container>
+    <Grid container sx={{ justifyContent: "center", width: "90%" }}>
       {skills.map(({ name, arr, show }) => {
         return (
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={5}>
             <Typography
               sx={{ mt: 4, mb: 2 }}
               variant="h6"
@@ -90,11 +150,21 @@ export default function InteractiveList() {
                   return (
                     <ListItem>
                       <ListItemAvatar>
-                        <Avatar>
-                          <FolderIcon />
+                        <Avatar src={val.icon} variant="circular">
+                          {/* <Paper
+                            elevation="4"
+                            variant="elevation"
+                            component="img"
+                            src={val.icon}
+                            sx={{
+                              width: "60%",
+                              borderRadius: "50%",
+                              margin: { md: "auto 0" },
+                            }}
+                          /> */}
                         </Avatar>
                       </ListItemAvatar>
-                      <ListItemText primary={val} />
+                      <ListItemText primary={val.name} />
                     </ListItem>
                   );
                 })}
