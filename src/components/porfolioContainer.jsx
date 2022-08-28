@@ -8,17 +8,15 @@ import Footer from "./footer";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
-  let options = ["HOME", "PORFOLIO", "ABOUT ME", "CONTACT ME"];
+  let options = ["HOME", "PORFOLIO", "CONTACT ME"];
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
     if (currentPage.toLocaleLowerCase() === "home") {
       return <Home />;
     }
-    if (currentPage.toLocaleLowerCase() === "about") {
-      return <About />;
-    }
-    if (currentPage.toLocaleLowerCase() === "contact") {
+
+    if (currentPage.toLocaleLowerCase() === "contact me") {
       return <Contact />;
     }
     return <Porfolio />;
