@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ButtonAppBar from "./navbar";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Porfolio from "./pages/Porfolio";
 import Footer from "./footer";
@@ -25,7 +24,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <>
       {/* We are passing the currentPage from state and the function to update it */}
       <ButtonAppBar
         currentPage={currentPage}
@@ -35,6 +34,6 @@ export default function PortfolioContainer() {
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
       <Footer></Footer>
-    </div>
+    </>
   );
 }
