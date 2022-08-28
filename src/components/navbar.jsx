@@ -16,7 +16,7 @@ export default function ButtonAppBar(props) {
 
   return (
     <AppBar
-      position="absolute"
+      position="sticky"
       sx={{
         display: "flex",
         flexDirection: "row",
