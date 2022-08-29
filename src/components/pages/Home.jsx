@@ -10,7 +10,7 @@ export default function Home() {
     <Container>
       <Grid container className="block--bottom__1">
         <Grid
-          items
+          item
           md={6}
           display="flex"
           flexDirection="column"
@@ -27,7 +27,7 @@ export default function Home() {
             }}
           >
             <Paper
-              elevation="4"
+              elevation={4}
               variant="elevation"
               component="img"
               src={backgroundImage}
