@@ -75,6 +75,7 @@ export default function ButtonAppBar(props) {
           >
             {props.options.map((el) => (
               <Button
+                key={el}
                 color="primary"
                 onClick={() => props.handlePageChange(el)}
                 sx={{
