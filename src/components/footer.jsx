@@ -50,6 +50,7 @@ export default function Footer() {
           {arrIcons.map((el) => {
             return (
               <IconButton
+                key={el.url}
                 size="s"
                 edge="start"
                 color="whitePrimary"
