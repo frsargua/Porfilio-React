@@ -131,7 +131,7 @@ export default function InteractiveList() {
     <Grid container sx={{ justifyContent: "center", width: "90%" }}>
       {skills.map(({ name, arr, show }) => {
         return (
-          <Grid item xs={12} md={5}>
+          <Grid key={name} item xs={12} md={5}>
             <Typography
               sx={{ mt: 4, mb: 2 }}
               variant="h6"
@@ -145,24 +145,12 @@ export default function InteractiveList() {
             <Demo
               sx={{ display: { sm: show ? "block" : "none", md: "block" } }}
             >
-              <List dense="true">
+              <List dense>
                 {arr.map((val) => {
                   return (
-                    <ListItem>
+                    <ListItem key={val.name}>
                       <ListItemAvatar>
-                        <Avatar src={val.icon} variant="circular">
-                          {/* <Paper
-                            elevation="4"
-                            variant="elevation"
-                            component="img"
-                            src={val.icon}
-                            sx={{
-                              width: "60%",
-                              borderRadius: "50%",
-                              margin: { md: "auto 0" },
-                            }}
-                          /> */}
-                        </Avatar>
+                        <Avatar src={val.icon} variant="circular"></Avatar>
                       </ListItemAvatar>
                       <ListItemText primary={val.name} />
                     </ListItem>
