@@ -21,7 +21,7 @@ export default function Porfolio() {
           sx={{ justifyContent: { sm: "center", md: "left" } }}
         >
           {smallProjects.map((el) => {
-            return <PorfolioCard values={el}></PorfolioCard>;
+            return <PorfolioCard key={el.repoUrl} values={el}></PorfolioCard>;
           })}
         </Grid>
       </Container>
