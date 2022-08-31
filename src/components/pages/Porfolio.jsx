@@ -8,13 +8,13 @@ export default function Porfolio() {
   return (
     <>
       <Container className="block--top__1">
-        <Typography variant="h2" component="h5" textAlign="center" gutterBottom>
+        <Typography variant="h2" component="h5" textAlign="center">
           Porfolio
         </Typography>
         <Grid
           container
           spacing={7}
-          rowGap={4}
+          rowGap={2}
           display="flex"
           className="block__1"
           width="100%"

@@ -44,8 +44,12 @@ export default function PorfolioCard({ values }) {
             marginTop: "auto",
           }}
         >
-          <Button>Repo</Button>
-          <Button>Deployed</Button>
+          <Button component="a" href={values.repoUrl} target="_blank">
+            Repo
+          </Button>
+          <Button component="a" href={values.deployed} target="_blank">
+            Deployed
+          </Button>
         </ButtonGroup>
       </Card>
     </Grid>

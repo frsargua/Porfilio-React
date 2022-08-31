@@ -14,7 +14,7 @@ let largeProjects = [
       "RESTFUL-APIs",
     ],
     description:
-      "A booking, listing and search site for short stays which requires the user to sign in/up to access the functionalities.",
+      "A booking, listing and search site for short stays. The app requires the user to log in to access all the app functionalities",
   },
   {
     repoUrl: "https://github.com/RamiElsayed/film-go",
@@ -22,7 +22,7 @@ let largeProjects = [
     imageUrl: "film-Go.png",
     title: "Film-Go App",
     description:
-      "A movie search website to bookmark, search by genre and name, any movies supported by IMDB-API library",
+      "A movie seach website to bookmark, search by genre and name. App is supported by IMDB-API",
   },
 ];
 let smallProjects = [
@@ -39,21 +39,23 @@ let smallProjects = [
     imageUrl: "wheather-app.png",
     title: "Weather App",
     description:
-      "The app allows the user to search for the weather forecast for a given location and saves it to the local storage.",
+      "The app allows the user to search and save the weather forecast of a location. The save feature is handle by local storage.",
   },
   {
     repoUrl: "https://github.com/frsargua/WeekFourHW_FS",
     deployed: "https://frsargua.github.io/WeekFourHW_FS/",
     imageUrl: "quizz-app.jpg",
     title: "Quiz App",
-    description: "A short quiz app",
+    description:
+      "A short quiz app that  DOM manipulation to determine the correct answers and local storage to keep a record of scores",
   },
-  // {
-  //   repoUrl: "https://github.com/frsargua/WeekFive_FS",
-  //   deployed: "https://frsargua.github.io/WeekFive_FS/",
-  //   imageUrl: "../images/Scheduler-app.png",
-  //   title: "Scheduler App",
-  // },
+  {
+    repoUrl: "https://github.com/frsargua/WeekFive_FS",
+    deployed: "https://frsargua.github.io/WeekFive_FS/",
+    imageUrl: "Scheduler.svg",
+    description: "Scheduler for scheduling a working day",
+    title: "Scheduler App",
+  },
 ];
 
 module.exports = { largeProjects, smallProjects };
