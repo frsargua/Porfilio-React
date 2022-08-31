@@ -26,12 +26,10 @@ export default function ButtonAppBar(props) {
       }}
     >
       <Button
-        size="small"
         aria-label="account of current user"
-        color="inherit"
         onClick={collapse}
         sx={{
-          display: { sm: "none", md: "block" },
+          display: { xs: "none", md: "block" },
           width: "fit-content",
           position: "relative",
           left: "2rem",
@@ -48,7 +46,7 @@ export default function ButtonAppBar(props) {
             margin: "1rem",
             padding: "0.2rem 1rem",
             display: "flex",
-            flexDirection: { sm: "column", md: "row" },
+            flexDirection: { xs: "column", md: "row" },
             backgroundColor: "black",
           }}
         >
@@ -68,8 +66,8 @@ export default function ButtonAppBar(props) {
           <Box
             sx={{
               width: "100%",
-              display: { sm: collapsed ? "none" : "flex", md: "flex" },
-              flexDirection: { sm: "column", md: "row" },
+              display: { xs: collapsed ? "none" : "flex", md: "flex" },
+              flexDirection: { xs: "column", md: "row" },
               justifyContent: "space-evenly",
             }}
           >
