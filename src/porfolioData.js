@@ -2,7 +2,7 @@ let largeProjects = [
   {
     repoUrl: "https://github.com/frsargua/STAYHAVEN-APP",
     deployed: "https://radiant-bayou-46133.herokuapp.com",
-    imageUrl: "./Images/stayHaven.png",
+    imageUrl: "stayHaven.png",
     title: "StayHaven",
     technologies: [
       "HTML",
@@ -19,7 +19,7 @@ let largeProjects = [
   {
     repoUrl: "https://github.com/RamiElsayed/film-go",
     deployed: "https://ramielsayed.github.io/film-go/",
-    imageUrl: "./Images/film-Go.png",
+    imageUrl: "film-Go.png",
     title: "Film-Go App",
     description:
       "A movie search website to bookmark, search by genre and name, any movies supported by IMDB-API library",
@@ -28,7 +28,7 @@ let largeProjects = [
 let smallProjects = [
   {
     repoUrl: "https://frsargua.github.io/week10-HW/",
-    imageUrl: "./Images/teamprofile.png",
+    imageUrl: "teamprofile.png",
     title: "Team Profile Generator",
     description:
       "A terminal app to create a html page containing the members of a team and their positions ",
@@ -36,7 +36,7 @@ let smallProjects = [
   {
     repoUrl: "https://github.com/frsargua/WeekSix_FS",
     deployed: "https://frsargua.github.io/WeekSix_FS/",
-    imageUrl: "./Images/wheather-app.png",
+    imageUrl: "wheather-app.png",
     title: "Weather App",
     description:
       "The app allows the user to search for the weather forecast for a given location and saves it to the local storage.",
@@ -44,16 +44,16 @@ let smallProjects = [
   {
     repoUrl: "https://github.com/frsargua/WeekFourHW_FS",
     deployed: "https://frsargua.github.io/WeekFourHW_FS/",
-    imageUrl: "./Images/quizz-app.png",
+    imageUrl: "quizz-app.jpg",
     title: "Quiz App",
     description: "A short quiz app",
   },
-  {
-    repoUrl: "https://github.com/frsargua/WeekFive_FS",
-    deployed: "https://frsargua.github.io/WeekFive_FS/",
-    imageUrl: "./Images/Scheduler-app.png",
-    title: "Scheduler App",
-  },
+  // {
+  //   repoUrl: "https://github.com/frsargua/WeekFive_FS",
+  //   deployed: "https://frsargua.github.io/WeekFive_FS/",
+  //   imageUrl: "../images/Scheduler-app.png",
+  //   title: "Scheduler App",
+  // },
 ];
 
 module.exports = { largeProjects, smallProjects };

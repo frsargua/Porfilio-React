@@ -1,6 +1,6 @@
 import React from "react";
 import PorfolioCard from "../card";
-import { largeProjects, smallProjects } from "../../porfolioData";
+import projects from "../../porfolioData";
 import { Container } from "@mui/system";
 import { Grid, Typography } from "@mui/material";
 
@@ -20,7 +20,10 @@ export default function Porfolio() {
           width="100%"
           sx={{ justifyContent: { sm: "center", md: "left" } }}
         >
-          {smallProjects.map((el) => {
+          {projects.largeProjects.map((el) => {
+            return <PorfolioCard key={el.repoUrl} values={el}></PorfolioCard>;
+          })}
+          {projects.smallProjects.map((el) => {
             return <PorfolioCard key={el.repoUrl} values={el}></PorfolioCard>;
           })}
         </Grid>

@@ -1,11 +1,10 @@
 import {
-  Paper,
   Typography,
   Card,
   CardContent,
-  CardMedia,
   ButtonGroup,
   Button,
+  CardMedia,
   Grid,
 } from "@mui/material";
 import React from "react";
@@ -13,7 +12,7 @@ import Img from "../images/stayHaven.png";
 
 export default function PorfolioCard({ values }) {
   return (
-    <Grid item sm={10} md={6} lg={4} component="div" height="430px">
+    <Grid item sm={10} md={6} lg={4} component="div" height="400px">
       <Card
         sx={{
           display: "flex",
@@ -25,10 +24,10 @@ export default function PorfolioCard({ values }) {
       >
         <CardMedia
           component="img"
-          height="180px"
-          image={Img}
+          height="160px"
+          image={require("../images/" + values.imageUrl)}
           alt="green iguana"
-          sx={{ marginBottom: "1rem" }}
+          sx={{ marginBottom: "1rem", objectFit: "contain" }}
         />
         <Typography gutterBottom variant="h5" component="h3" textAlign="center">
           {values.title}
