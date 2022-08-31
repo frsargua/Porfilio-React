@@ -8,10 +8,23 @@ import Avatar from "@mui/material/Avatar";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
-import git from "../images/logos/git.png";
-import graphql from "../images/logos/graphql.png";
-import html from "../images/logos/html.png";
-import javascript from "../images/logos/javascript.png";
+import git from "../images/logos/git.svg";
+import css from "../images/logos/css3.svg";
+import nodejs from "../images/logos/nodejs.svg";
+import mysql from "../images/logos/mysql.svg";
+import handlerbars from "../images/logos/handlebars.svg";
+import mongodb from "../images/logos/mongodb.svg";
+import MaterialUI from "../images/logos/materialUI.svg";
+import sequelize from "../images/logos/sequelize.svg";
+import express from "../images/logos/express.svg";
+import mongoose from "../images/logos/mongoose.svg";
+import bootstrap from "../images/logos/bootstrap.svg";
+import react from "../images/logos/react.svg";
+import jquery from "../images/logos/jquery.svg";
+import heroku from "../images/logos/heroku.svg";
+import graphql from "../images/logos/graphql.svg";
+import html from "../images/logos/html.svg";
+import javascript from "../images/logos/javascript.svg";
 
 const Demo = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -29,7 +42,7 @@ export default function InteractiveList() {
         },
         {
           name: "CSS3",
-          icon: html,
+          icon: css,
         },
         {
           name: "JavaScript",
@@ -43,7 +56,7 @@ export default function InteractiveList() {
       arr: [
         {
           name: "Node.js",
-          icon: git,
+          icon: nodejs,
         },
         {
           name: "Git",
@@ -51,11 +64,11 @@ export default function InteractiveList() {
         },
         {
           name: "Heroku",
-          icon: "../images/logos/git.png",
+          icon: heroku,
         },
         {
           name: "Handlebars.js",
-          icon: "../images/logos/git.png",
+          icon: handlerbars,
         },
       ],
     },
@@ -66,23 +79,23 @@ export default function InteractiveList() {
       arr: [
         {
           name: "React",
-          icon: git,
+          icon: react,
         },
         {
           name: "jQuery",
-          icon: git,
+          icon: jquery,
         },
         {
           name: "Bootstrap",
-          icon: git,
+          icon: bootstrap,
         },
         {
           name: "MaterialUI",
-          icon: git,
+          icon: MaterialUI,
         },
         {
           name: "Express.js",
-          icon: git,
+          icon: express,
         },
       ],
     },
@@ -92,19 +105,19 @@ export default function InteractiveList() {
       arr: [
         {
           name: "MySQL",
-          icon: graphql,
+          icon: mysql,
         },
         {
           name: "Sequelize",
-          icon: graphql,
+          icon: sequelize,
         },
         {
           name: "MongoDB",
-          icon: graphql,
+          icon: mongodb,
         },
         {
           name: "Mongoose",
-          icon: graphql,
+          icon: mongoose,
         },
         {
           name: "GraphQl",
@@ -150,7 +163,7 @@ export default function InteractiveList() {
                   return (
                     <ListItem key={val.name}>
                       <ListItemAvatar>
-                        <Avatar src={val.icon} variant="circular"></Avatar>
+                        <Avatar src={val.icon} variant="rounded"></Avatar>
                       </ListItemAvatar>
                       <ListItemText primary={val.name} />
                     </ListItem>
