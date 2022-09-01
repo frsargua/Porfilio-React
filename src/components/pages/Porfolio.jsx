@@ -1,5 +1,5 @@
 import React from "react";
-import PorfolioCard from "../card";
+import PorfolioCard from "../PorfolioCard";
 import projects from "../../porfolioData";
 import { Container } from "@mui/system";
 import { Grid, Typography } from "@mui/material";

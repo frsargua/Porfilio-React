@@ -1,14 +1,12 @@
 import {
   Typography,
   Card,
-  CardContent,
   ButtonGroup,
   Button,
   CardMedia,
   Grid,
 } from "@mui/material";
 import React from "react";
-import Img from "../images/stayHaven.png";
 
 export default function PorfolioCard({ values }) {
   return (
