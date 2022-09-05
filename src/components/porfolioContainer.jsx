@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import ButtonAppBar from "./navbar";
+import ButtonAppBar from "./Navbar";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Porfolio from "./pages/Porfolio";
-import Footer from "./footer";
+import Footer from "./Footer";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
