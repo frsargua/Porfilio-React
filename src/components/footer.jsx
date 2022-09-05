@@ -15,7 +15,7 @@ export default function Footer() {
   const theme = createTheme({
     palette: {
       whitePrimary: {
-        main: "#fff",
+        main: "#000",
       },
     },
   });
@@ -37,7 +37,7 @@ export default function Footer() {
         sx={{
           bottom: "0",
           top: "auto",
-          backgroundColor: "black",
+          backgroundColor: "#F4F6FA",
           height: "55px",
         }}
       >

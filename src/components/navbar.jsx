@@ -47,7 +47,7 @@ export default function ButtonAppBar(props) {
             padding: "0.2rem 1rem",
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
-            backgroundColor: "black",
+            backgroundColor: "#F4F6FA",
           }}
         >
           <Button
@@ -74,7 +74,6 @@ export default function ButtonAppBar(props) {
             {props.options.map((el) => (
               <Button
                 key={el}
-                color="primary"
                 onClick={() => props.handlePageChange(el)}
                 sx={{
                   ":hover": {
@@ -87,7 +86,11 @@ export default function ButtonAppBar(props) {
                   variant="h6"
                   component="a"
                   href="#"
-                  sx={{ flexGrow: 1, color: "white", textDecoration: "none" }}
+                  sx={{
+                    flexGrow: 1,
+                    color: "#000",
+                    textDecoration: props.currentPage === el ? "" : "none",
+                  }}
                 >
                   {el}
                 </Typography>
