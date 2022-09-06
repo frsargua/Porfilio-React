@@ -19,7 +19,7 @@ export default function ButtonAppBar(props) {
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
-        backgroundColor: "white",
+        backgroundColor: "rgb(256,256,256,0.7)",
         boxShadow: "none",
       }}
     >
