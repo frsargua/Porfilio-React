@@ -5,39 +5,17 @@ import Box from "@mui/material/Box";
 import { useForm } from "@formspree/react";
 import {
   Button,
-  FormControl,
-  Input,
-  InputLabel,
+  Card,
+  CardContent,
+  Chip,
+  Link,
+  TextField,
   Typography,
 } from "@mui/material";
 import Home from "./Home";
+import EmailIcon from "@mui/icons-material/Email";
 
 export default function Contact() {
-  const [formData, setName] = React.useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [progress, setProgress] = React.useState(0);
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress((oldProgress) => {
-        if (oldProgress === 100) {
-          return 100;
-        }
-        const diff = Math.random() * 15;
-        return Math.min(oldProgress + diff, 100);
-      });
-    }, 500);
-
-    if (timer === 100) {
-      console.log("hi");
-      return <Home></Home>;
-    }
-  }, []);
-
   const [state, handleSubmit] = useForm("xgedgbow");
   if (state.succeeded) {
     return (
@@ -54,85 +32,93 @@ export default function Contact() {
         <Typography variant="h2" textAlign="center" gutterBottom>
           Thank you for reaching out!
         </Typography>
-        <Box sx={{ width: "70%", marginTop: "3rem" }}>
-          <LinearProgress variant="determinate" value={progress} />
-        </Box>
       </Container>
     );
   }
 
-  const handleChange = (event) => {
-    let { name, value } = event.target;
-    setName((prev) => {
-      return { ...prev, [name]: value };
-    });
-  };
   return (
     <>
       <Container
         sx={{
           height: "90vh",
           display: "flex",
+          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <Box
-          onSubmit={handleSubmit}
+        <Typography variant="h3" fontWeight="500" sx={{ marginBottom: "4rem" }}>
+          Want to know more? Drop me an email
+        </Typography>
+
+        <Link
+          href="mailto:frsargua@gmail.com"
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            width: 500,
-            maxWidth: "100%",
-            "& > :not(style)": { m: 1 },
-            padding: "2rem",
-            border: "1px solid rgb(191, 191, 191)",
-            borderRadius: "10px",
+            textDecoration: "none",
+            marginBottom: "1.5rem",
           }}
-          marginX="auto"
-          component="form"
-          noValidate
-          autoComplete="off"
         >
-          <FormControl fullWidth variant="standard">
-            <InputLabel htmlFor="text">Name</InputLabel>
-            <Input
-              id="component-simple"
-              name="name"
-              required
-              type="text"
-              value={formData.name}
-              onChange={handleChange}
-            />
-          </FormControl>
-          <FormControl fullWidth variant="standard">
-            <InputLabel htmlFor="email">Email</InputLabel>
-            <Input
-              id="component-simple"
-              name="email"
-              type="email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </FormControl>
-          <FormControl fullWidth variant="standard">
-            <InputLabel htmlFor="textArea">Message</InputLabel>
-            <Input
-              multiline
-              minRows={3}
-              name="message"
-              id="component-simple"
-              value={formData.message}
-              onChange={handleChange}
-            />
-          </FormControl>
-          <Button type="submit" disabled={state.submitting}>
-            Submit
-          </Button>
-        </Box>
+          <Chip
+            icon={<EmailIcon />}
+            label="Frsargua@gmail.com"
+            onClick
+            color="secondary"
+            sx={{ height: "40px", paddingX: "1rem" }}
+          />
+        </Link>
+
+        <Card>
+          <CardContent sx={{ padding: "2rem" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                width: 500,
+                maxWidth: "100%",
+                "& > :not(style)": { m: 1 },
+              }}
+              component="form"
+              autoComplete
+              onSubmit={handleSubmit}
+            >
+              <TextField
+                fullWidth
+                name="name"
+                type="text"
+                label="Name"
+                variant="standard"
+                required
+              />
+              <TextField
+                fullWidth
+                name="email"
+                type="email"
+                label="Email"
+                variant="standard"
+                required
+              />
+              <TextField
+                fullWidth
+                name="message"
+                label="Write your enquire here!"
+                multiline
+                minRows={3}
+                variant="filled"
+              />
+
+              <Button
+                type="submit"
+                variant="contained"
+                color="error"
+                disabled={state.submitting}
+              >
+                Submit
+              </Button>
+            </Box>
+          </CardContent>
+        </Card>
       </Container>
     </>
   );
