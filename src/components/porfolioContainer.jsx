@@ -16,7 +16,7 @@ export default function PortfolioContainer() {
     }
 
     if (currentPage.toLocaleLowerCase() === "contact me") {
-      return <Contact />;
+      return <Contact handlePageChange={handlePageChange} />;
     }
     return <Porfolio />;
   };
