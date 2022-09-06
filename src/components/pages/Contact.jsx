@@ -11,7 +11,6 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import Home from "./Home";
 import EmailIcon from "@mui/icons-material/Email";
 
 export default function Contact() {
