@@ -35,7 +35,7 @@ export default function ButtonAppBar(props) {
           height: "100%",
         }}
       >
-        <img src={avatar} style={{ height: "50px" }} />
+        <img src={avatar} alt="used avatar" style={{ height: "50px" }} />
       </Button>
       <Container maxWidth="lg">
         <Box
@@ -59,7 +59,7 @@ export default function ButtonAppBar(props) {
               margin: "auto",
             }}
           >
-            <img src={avatar} style={{ maxHeight: "50px" }} />
+            <img src={avatar} alt="used avatar" style={{ maxHeight: "50px" }} />
           </Button>
           <Box
             sx={{
