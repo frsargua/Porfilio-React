@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 
-export default function Contact() {
+export default function Contact(props) {
   const [state, handleSubmit] = useForm("xgedgbow");
   if (state.succeeded) {
     return (
@@ -30,6 +30,15 @@ export default function Contact() {
         <Typography variant="h2" textAlign="center" gutterBottom>
           Thank you for reaching out!
         </Typography>
+        <Button
+          onClick={() => {
+            props.handlePageChange("home");
+          }}
+          variant="contained"
+          color="warning"
+        >
+          Return to Homepage
+        </Button>
       </Container>
     );
   }
