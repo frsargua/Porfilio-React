@@ -7,7 +7,7 @@ import {
   Grid,
   CardContent,
 } from "@mui/material";
-import { Box, Stack } from "@mui/system";
+import { Stack } from "@mui/system";
 import React from "react";
 
 export default function PorfolioCard({ values }) {

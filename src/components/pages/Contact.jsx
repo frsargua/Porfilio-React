@@ -1,6 +1,5 @@
 import { Container } from "@mui/system";
 import React from "react";
-import LinearProgress from "@mui/material/LinearProgress";
 import Box from "@mui/material/Box";
 import { useForm } from "@formspree/react";
 import {

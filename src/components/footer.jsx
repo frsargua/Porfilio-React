@@ -9,7 +9,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { fontSize } from "@mui/system";
 
 export default function Footer() {
   const theme = createTheme({

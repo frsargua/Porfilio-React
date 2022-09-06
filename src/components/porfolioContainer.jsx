@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Porfolio from "./pages/Porfolio";
 import Footer from "./Footer";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");

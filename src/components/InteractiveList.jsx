@@ -7,7 +7,6 @@ import ListItemText from "@mui/material/ListItemText";
 import Avatar from "@mui/material/Avatar";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
 import git from "../images/logos/git.svg";
 import css from "../images/logos/css3.svg";
 import nodejs from "../images/logos/nodejs.svg";
