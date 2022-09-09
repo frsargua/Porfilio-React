@@ -49,12 +49,12 @@ export default function Home() {
           >
             <Box
               sx={{
-                background: 'url("/img/bg.jpg")',
+                background: 'url("./img/bg.jpg")',
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                width: { xs: "300px", md: "s400px" },
-                height: { xs: "300px", md: "s400px" },
+                width: { xs: "300px", md: "400px" },
+                height: { xs: "300px", md: "400px" },
                 order: 1,
                 justifySelf: "center",
                 boxShadow: "inset 0 0 0 12px rgb(255 255 255/30%)",
