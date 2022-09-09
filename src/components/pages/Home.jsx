@@ -26,7 +26,21 @@ export default function Home() {
               marginBottom: "20vh",
             }}
           >
-            <Paper
+            <div
+              style={{
+                background: 'url("/img/bg.jpg")',
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                width: "400px",
+                height: "400px",
+                order: 1,
+                justifySelf: "center",
+                boxShadow: "inset 0 0 0 12px rgb(255 255 255/30%)",
+                animation: "profile__image__animate 8s ease-in-out infinite 1s",
+              }}
+            ></div>
+            {/* <Paper
               elevation={4}
               variant="elevation"
               component="img"
@@ -36,7 +50,7 @@ export default function Home() {
                 borderRadius: "50%",
                 margin: { md: "auto 0" },
               }}
-            />
+            /> */}
           </Box>
           <Typography
             variant="h5"
