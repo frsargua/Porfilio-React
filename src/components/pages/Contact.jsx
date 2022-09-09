@@ -54,7 +54,7 @@ export default function Contact(props) {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h3" fontWeight="500" sx={{ marginBottom: "4rem" }}>
+        <Typography variant="h3" fontWeight="600" sx={{ marginBottom: "4rem" }}>
           Want to know more? Drop me an email
         </Typography>
 
