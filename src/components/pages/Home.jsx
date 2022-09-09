@@ -19,15 +19,15 @@ export default function Home() {
           >
             Hi, My Name is Fabian
           </Typography>
-          <Typography
+          <Typograpshy
             sx={{ display: { xs: "block", md: "none" } }}
-            mT="2rem"
+            marginTop="2rem"
             variant="h3"
             component="h1"
             textAlign="center"
           >
             Hi, My Name is Fabian
-          </Typography>
+          </Typograpshy>
         </Grid>
         <Grid
           item
