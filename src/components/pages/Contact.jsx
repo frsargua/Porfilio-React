@@ -47,7 +47,7 @@ export default function Contact(props) {
     <>
       <Container
         sx={{
-          height: "90vh",
+          height: { xs: "150vh", md: "90vh" },
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -74,7 +74,7 @@ export default function Contact(props) {
           />
         </Link>
 
-        <Card>
+        <Card sx={{ width: { xs: "100%", md: "auto" } }}>
           <CardContent sx={{ padding: "2rem" }}>
             <Box
               sx={{
@@ -82,8 +82,8 @@ export default function Contact(props) {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                width: 500,
-                maxWidth: "100%",
+                width: { xs: "100%", md: 500 },
+                // maxWidth: "100%",
                 "& > :not(style)": { m: 1 },
               }}
               component="form"
