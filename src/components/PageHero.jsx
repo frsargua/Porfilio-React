@@ -11,7 +11,7 @@ export default function PageHero() {
         variant="h5"
         component="p"
         sx={{
-          display: { sm: "none", md: "block" },
+          display: { xs: "none", md: "block" },
           position: "sticky",
           top: "35%",
           margin: "11rem 0",

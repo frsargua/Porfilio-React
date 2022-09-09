@@ -23,23 +23,23 @@ export default function Home() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginBottom: "20vh",
+              marginBottom: { md: "20vh" },
             }}
           >
-            <div
-              style={{
+            <Box
+              sx={{
                 background: 'url("/img/bg.jpg")',
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                width: "400px",
-                height: "400px",
+                width: { xs: "300px", md: "s400px" },
+                height: { xs: "300px", md: "s400px" },
                 order: 1,
                 justifySelf: "center",
                 boxShadow: "inset 0 0 0 12px rgb(255 255 255/30%)",
                 animation: "profile__image__animate 8s ease-in-out infinite 1s",
               }}
-            ></div>
+            ></Box>
             {/* <Paper
               elevation={4}
               variant="elevation"
@@ -56,8 +56,8 @@ export default function Home() {
             variant="h5"
             component="p"
             sx={{
-              display: { sm: "block", md: "none" },
-              margin: { sm: "5rem 0" },
+              display: { xs: "block", md: "none" },
+              margin: { xs: "5rem 0" },
             }}
           >
             A full-stack web developer majored in Chemistry. Having achieved a
