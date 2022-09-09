@@ -19,7 +19,7 @@ export default function Home() {
           >
             Hi, My Name is Fabian
           </Typography>
-          <Typograpshy
+          <Typography
             sx={{ display: { xs: "block", md: "none" } }}
             marginTop="2rem"
             variant="h3"
@@ -27,7 +27,7 @@ export default function Home() {
             textAlign="center"
           >
             Hi, My Name is Fabian
-          </Typograpshy>
+          </Typography>
         </Grid>
         <Grid
           item
