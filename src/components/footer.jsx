@@ -34,6 +34,7 @@ export default function Footer() {
         className="bg__primary"
         position="fixed"
         sx={{
+          display: { sx: "block", md: "none" },
           bottom: "0",
           top: "auto",
           backgroundColor: "#F4F6FA",
