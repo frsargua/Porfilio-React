@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Porfolio from "./pages/Porfolio";
 import Footer from "./Footer";
+import SideBar from "./SideBar";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -31,6 +32,7 @@ export default function PortfolioContainer() {
         handlePageChange={handlePageChange}
         options={options}
       />
+      <SideBar />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
       <Footer></Footer>
