@@ -25,8 +25,8 @@ export default function Footer() {
       url: "https://www.linkedin.com/in/fabiansarango/gi",
       html: <LinkedInIcon />,
     },
-    { url: "tel:+00447542351359", html: <EmailIcon /> },
-    { url: "mailto:frsargua@gmail.com", html: <CallIcon /> },
+    { url: "tel:+00447542351359", html: <CallIcon /> },
+    { url: "mailto:frsargua@gmail.com", html: <EmailIcon /> },
   ];
   return (
     <ThemeProvider theme={theme}>
