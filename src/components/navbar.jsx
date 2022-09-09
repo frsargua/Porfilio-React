@@ -4,7 +4,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import avatar from "../images/avatar.png";
-import { Container } from "@mui/material";
+import { Container, Link } from "@mui/material";
+import CV from "../CV.pdf";
 
 export default function ButtonAppBar(props) {
   const [collapsed, setCollapse] = React.useState(true);
@@ -69,31 +70,57 @@ export default function ButtonAppBar(props) {
               justifyContent: "space-evenly",
             }}
           >
-            {props.options.map((el) => (
-              <Button
-                key={el}
-                onClick={() => props.handlePageChange(el)}
-                sx={{
-                  ":hover": {
-                    bgcolor: "rgba(255,255,255,0.1)",
-                    color: "white",
-                  },
-                }}
-              >
-                <Typography
-                  variant="h6"
-                  component="a"
-                  href="#"
+            {props.options.map((el) =>
+              el != "DOWNLOAD CV" ? (
+                <Button
+                  key={el}
+                  onClick={() => props.handlePageChange(el)}
                   sx={{
-                    flexGrow: 1,
-                    color: "#000",
-                    textDecoration: props.currentPage === el ? "" : "none",
+                    ":hover": {
+                      bgcolor: "rgba(255,255,255,0.1)",
+                      color: "white",
+                    },
                   }}
                 >
-                  {el}
-                </Typography>
-              </Button>
-            ))}
+                  <Typography
+                    variant="h6"
+                    component="a"
+                    href="#"
+                    sx={{
+                      flexGrow: 1,
+                      color: "#000",
+                      textDecoration: props.currentPage === el ? "" : "none",
+                    }}
+                  >
+                    {el}
+                  </Typography>
+                </Button>
+              ) : (
+                <Button
+                  key={el}
+                  sx={{
+                    ":hover": {
+                      bgcolor: "rgba(255,255,255,0.1)",
+                      color: "white",
+                    },
+                  }}
+                >
+                  <Typography
+                    variant="h6"
+                    component="a"
+                    download
+                    href={CV}
+                    sx={{
+                      flexGrow: 1,
+                      color: "#000",
+                      textDecoration: props.currentPage === el ? "" : "none",
+                    }}
+                  >
+                    {el}
+                  </Typography>
+                </Button>
+              )
+            )}
           </Box>
         </Box>
       </Container>
