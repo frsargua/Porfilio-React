@@ -9,6 +9,26 @@ export default function Home() {
   return (
     <Container>
       <Grid container className="block--bottom__1">
+        <Grid xs={12} item>
+          <Typography
+            sx={{ marginTop: "1rem", display: { xs: "none", md: "block" } }}
+            variant="h1"
+            component="h1"
+            textAlign="center"
+            fontWeight="500"
+          >
+            Hi, My Name is Fabian
+          </Typography>
+          <Typography
+            sx={{ display: { xs: "block", md: "none" } }}
+            mT="2rem"
+            variant="h3"
+            component="h1"
+            textAlign="center"
+          >
+            Hi, My Name is Fabian
+          </Typography>
+        </Grid>
         <Grid
           item
           md={6}
@@ -18,8 +38,9 @@ export default function Home() {
           alignItems="center"
         >
           <Box
-            style={{
-              height: "80vh",
+            sx={{
+              // height: "80vh",
+              height: { xs: "60vh", md: "65vh" },
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
