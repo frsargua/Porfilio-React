@@ -2,7 +2,7 @@ import * as React from "react";
 
 import Typography from "@mui/material/Typography";
 
-import { Grid, Paper } from "@mui/material";
+import { Grid } from "@mui/material";
 
 export default function PageHero() {
   return (

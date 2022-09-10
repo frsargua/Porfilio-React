@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import avatar from "../images/avatar.png";
-import { Container, Link } from "@mui/material";
+import { Container } from "@mui/material";
 import CV from "../CV.pdf";
 
 export default function ButtonAppBar(props) {
