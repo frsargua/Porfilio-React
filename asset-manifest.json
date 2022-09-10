@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/frsargua/Porfolio-React/static/css/main.19a9c732.css",
+    "main.js": "/frsargua/Porfolio-React/static/js/main.23092956.js",
+    "static/media/Screenshot 2022-06-01 at 17.40.54.png": "/frsargua/Porfolio-React/static/media/Screenshot 2022-06-01 at 17.40.54.45861001a7dfe8e0b9a5.png",
+    "static/media/d.png": "/frsargua/Porfolio-React/static/media/d.45861001a7dfe8e0b9a5.png",
+    "static/media/bg.jpg": "/frsargua/Porfolio-React/static/media/bg.9222158131b7f3dce272.jpg",
+    "static/media/CV.pdf": "/frsargua/Porfolio-React/static/media/CV.a9246d2097dcd3b6980e.pdf",
+    "static/media/avatar.png": "/frsargua/Porfolio-React/static/media/avatar.5e8ee3777216e48fb935.png",
+    "static/media/teamprofile.png": "/frsargua/Porfolio-React/static/media/teamprofile.0ca9aabce86eeb47bf4c.png",
+    "static/media/stayHaven.png": "/frsargua/Porfolio-React/static/media/stayHaven.3f04c27b688c8185bc0e.png",
+    "static/media/wheather-app.png": "/frsargua/Porfolio-React/static/media/wheather-app.000ca0bff5d522377e37.png",
+    "static/media/quizz-app.jpg": "/frsargua/Porfolio-React/static/media/quizz-app.5ca822f0af959896f793.jpg",
+    "static/media/film-Go.png": "/frsargua/Porfolio-React/static/media/film-Go.a5092c962f33ad2eec14.png",
+    "static/media/sequelize.svg": "/frsargua/Porfolio-React/static/media/sequelize.c8e2a3a18d206fb0b50aa0dbb9c143ea.svg",
+    "static/media/jquery.svg": "/frsargua/Porfolio-React/static/media/jquery.fcc480227fd31fecc887db807010bf1d.svg",
+    "static/media/mongoose.svg": "/frsargua/Porfolio-React/static/media/mongoose.bd16aebec7309fe82814a3ee1aa79f15.svg",
+    "static/media/react.svg": "/frsargua/Porfolio-React/static/media/react.e68b35f4774979ae220b1d5d7b345b00.svg",
+    "static/media/nodejs.svg": "/frsargua/Porfolio-React/static/media/nodejs.d39adae080cb59077b8c3a842bfd959c.svg",
+    "static/media/mysql.svg": "/frsargua/Porfolio-React/static/media/mysql.4af45e7aaed00b1328f75e54d94ac9c0.svg",
+    "static/media/Scheduler.svg": "/frsargua/Porfolio-React/static/media/Scheduler.8b6d10056cbd1296d968.svg",
+    "static/media/heroku.svg": "/frsargua/Porfolio-React/static/media/heroku.f185fa9fde1284bf778d977ec833e523.svg",
+    "static/media/graphql.svg": "/frsargua/Porfolio-React/static/media/graphql.7db65c4f3853622f99d922817dc9367b.svg",
+    "static/media/handlebars.svg": "/frsargua/Porfolio-React/static/media/handlebars.2c43b1adad1e04c4ab989b672630aacd.svg",
+    "static/media/bootstrap.svg": "/frsargua/Porfolio-React/static/media/bootstrap.1eb4919e7978e67fda84586110dec47b.svg",
+    "static/media/mongodb.svg": "/frsargua/Porfolio-React/static/media/mongodb.1aca075d5cce0819fea7ea0902d94ce4.svg",
+    "static/media/express.svg": "/frsargua/Porfolio-React/static/media/express.734e301f4b456b6f141539a5a79b2ef9.svg",
+    "index.html": "/frsargua/Porfolio-React/index.html",
+    "static/media/materialUI.svg": "/frsargua/Porfolio-React/static/media/materialUI.456bfb02539777f812137c514d397868.svg",
+    "static/media/git.svg": "/frsargua/Porfolio-React/static/media/git.da7cbb7e0f60abd807f4ef40cc3da768.svg",
+    "static/media/javascript.svg": "/frsargua/Porfolio-React/static/media/javascript.0dd1cf6c80bb500c655a617006c1148a.svg",
+    "static/media/css3.svg": "/frsargua/Porfolio-React/static/media/css3.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/html.svg": "/frsargua/Porfolio-React/static/media/html.e88a4e2612574766f9ee62254e4c0aab.svg",
+    "main.19a9c732.css.map": "/frsargua/Porfolio-React/static/css/main.19a9c732.css.map",
+    "main.23092956.js.map": "/frsargua/Porfolio-React/static/js/main.23092956.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19a9c732.css",
+    "static/js/main.23092956.js"
+  ]
+}
