@@ -1,4 +1,4 @@
-import { Container, Grid, Typography, Paper, Toolbar } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import PageHero from "../PageHero";
 import InteractiveList from "../InteractiveList";
 import backgroundImage from "../../images/bg.jpg";
