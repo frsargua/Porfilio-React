@@ -48,11 +48,13 @@ export default function Home() {
             }}
           >
             <Box
+              // className="animate"
               sx={{
-                background: 'url("./img/bg.jpg")',
+                backgroundImage: `url('${backgroundImage}')`,
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
+
                 width: { xs: "300px", md: "400px" },
                 height: { xs: "300px", md: "400px" },
                 order: 1,
