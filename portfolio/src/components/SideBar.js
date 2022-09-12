@@ -23,9 +23,10 @@ function SideBar() {
         orientation="vertical"
         variant="contained"
       >
-        {arrIcons.map((el) => {
+        {arrIcons.map((el, index) => {
           return (
             <IconButton
+              key={index}
               sx={{ display: { xs: "none", md: "block" } }}
               edge="end"
               LinkComponent="a"
