@@ -7,7 +7,7 @@ import avatar from "../images/avatar.png";
 import { Container } from "@mui/material";
 import CV from "../CV.pdf";
 
-export default function ButtonAppBar(props) {
+export default function Navbar(props) {
   const [collapsed, setCollapse] = React.useState(true);
   function collapse() {
     setCollapse((prev) => !prev);
@@ -71,7 +71,7 @@ export default function ButtonAppBar(props) {
             }}
           >
             {props.options.map((el) =>
-              el != "DOWNLOAD CV" ? (
+              el !== "DOWNLOAD CV" ? (
                 <Button
                   key={el}
                   onClick={() => props.handlePageChange(el)}

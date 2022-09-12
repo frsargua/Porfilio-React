@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@mui/system";
 import "./App.css";
-import PortfolioContainer from "./components/PorfolioContainer";
+import PortfolioContainer from "./components/PortfolioContainer";
 
 const theme = createTheme({
   typography: { fontFamily: ["Poppins"].join(",") },

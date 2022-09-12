@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ButtonAppBar from "./Navbar";
+import Navbar from "./Navbar";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Porfolio from "./pages/Porfolio";
@@ -26,7 +26,7 @@ export default function PortfolioContainer() {
   return (
     <>
       {/* We are passing the currentPage from state and the function to update it */}
-      <ButtonAppBar
+      <Navbar
         currentPage={currentPage}
         handlePageChange={handlePageChange}
         options={options}
