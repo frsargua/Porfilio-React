@@ -1,5 +1,22 @@
 let largeProjects = [
   {
+    repoUrl: "https://github.com/RamiElsayed/tap-tap-go",
+    deployed: "https://hidden-citadel-37214.herokuapp.com",
+    imageUrl: "TapTapGo-logo.png",
+    title: "TapTapGo",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "BootStrap",
+      "Express.js",
+      "RESTFUL-APIs",
+    ],
+    description:
+      "An events pages for users to post, search, bookmark and 'buy' tickets to latin SBK events",
+  },
+  {
     repoUrl: "https://github.com/frsargua/STAYHAVEN-APP",
     deployed: "https://radiant-bayou-46133.herokuapp.com",
     imageUrl: "stayHaven.png",
@@ -27,9 +44,10 @@ let largeProjects = [
 ];
 let smallProjects = [
   {
-    repoUrl: "https://frsargua.github.io/week10-HW/",
-    imageUrl: "teamprofile.png",
-    title: "Team Profile Generator",
+    repoUrl: "https://github.com/frsargua/Tech-BlogWebsite",
+    deployed: "https://immense-basin-10320.herokuapp.com",
+    imageUrl: "TechBlog-logo.png",
+    title: "Tech Blog",
     description:
       "A terminal app to create a html page containing the members of a team and their positions ",
   },
@@ -48,6 +66,13 @@ let smallProjects = [
     title: "Quiz App",
     description:
       "A short quiz app that  DOM manipulation to determine the correct answers and local storage to keep a record of scores",
+  },
+  {
+    repoUrl: "https://frsargua.github.io/week10-HW/",
+    imageUrl: "teamprofile.png",
+    title: "Team Profile Generator",
+    description:
+      "A terminal app to create a html page containing the members of a team and their positions ",
   },
   {
     repoUrl: "https://github.com/frsargua/WeekFive_FS",

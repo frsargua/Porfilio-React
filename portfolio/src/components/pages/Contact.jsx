@@ -47,7 +47,7 @@ export default function Contact(props) {
     <>
       <Container
         sx={{
-          height: { xs: "150vh", md: "90vh" },
+          height: { xs: "120vh", md: "90vh" },
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -74,7 +74,7 @@ export default function Contact(props) {
           />
         </Link>
 
-        <Card sx={{ width: { xs: "100%", md: "auto" } }}>
+        <Card sx={{ width: { xs: "100%", md: "auto" }, marginBottom: "5rem" }}>
           <CardContent sx={{ padding: "2rem" }}>
             <Box
               sx={{

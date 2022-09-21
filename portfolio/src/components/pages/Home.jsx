@@ -39,7 +39,6 @@ export default function Home() {
         >
           <Box
             sx={{
-              // height: "80vh",
               height: { xs: "60vh", md: "65vh" },
               display: "flex",
               alignItems: "center",
@@ -48,7 +47,6 @@ export default function Home() {
             }}
           >
             <Box
-              // className="animate"
               sx={{
                 backgroundImage: `url('${backgroundImage}')`,
                 backgroundRepeat: "no-repeat",
@@ -63,17 +61,6 @@ export default function Home() {
                 animation: "profile__image__animate 8s ease-in-out infinite 1s",
               }}
             ></Box>
-            {/* <Paper
-              elevation={4}
-              variant="elevation"
-              component="img"
-              src={backgroundImage}
-              sx={{
-                width: "60%",
-                borderRadius: "50%",
-                margin: { md: "auto 0" },
-              }}
-            /> */}
           </Box>
           <Typography
             variant="h5"

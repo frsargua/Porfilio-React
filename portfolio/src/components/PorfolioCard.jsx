@@ -63,9 +63,20 @@ export default function PorfolioCard({ values }) {
             <Button component="a" href={values.repoUrl} target="_blank">
               Repo
             </Button>
-            <Button component="a" href={values.deployed} target="_blank">
-              Deployed
-            </Button>
+            {values.deployed ? (
+              <Button component="a" href={values.deployed} target="_blank">
+                Deployed
+              </Button>
+            ) : (
+              <Button
+                disabled
+                component="a"
+                href={values.deployed}
+                target="_blank"
+              >
+                Deployed
+              </Button>
+            )}
           </ButtonGroup>
         </CardContent>
       </Card>
