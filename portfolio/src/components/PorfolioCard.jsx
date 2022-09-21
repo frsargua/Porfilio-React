@@ -13,7 +13,7 @@ import React from "react";
 
 export default function PorfolioCard({ values }) {
   return (
-    <Grid item xs={12} md={6} lg={4} component="div" height={{ xs: "480px" }}>
+    <Grid item xs={12} md={6} lg={4} component="div" height={{ xs: "490px" }}>
       <Card
         sx={{
           height: "100%",
@@ -53,7 +53,7 @@ export default function PorfolioCard({ values }) {
             >
               {values.description}
             </Typography>
-            <Stack direction="row" spacing={1} flexWrap="wrap">
+            <Stack direction="row" spacing={1} rowGap={1} flexWrap="wrap">
               {values.technologies.map((el) => {
                 {
                   return <Chip label={el} color="default" />;
