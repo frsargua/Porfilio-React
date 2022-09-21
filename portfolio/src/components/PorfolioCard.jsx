@@ -6,20 +6,14 @@ import {
   CardMedia,
   Grid,
   CardContent,
+  Chip,
 } from "@mui/material";
 import { Stack } from "@mui/system";
 import React from "react";
 
 export default function PorfolioCard({ values }) {
   return (
-    <Grid
-      item
-      xs={12}
-      md={6}
-      lg={4}
-      component="div"
-      height={{ xs: "450px", md: "400px" }}
-    >
+    <Grid item xs={12} md={6} lg={4} component="div" height={{ xs: "480px" }}>
       <Card
         sx={{
           height: "100%",
@@ -52,14 +46,26 @@ export default function PorfolioCard({ values }) {
               {values.title}
             </Typography>
             <Typography
+              gutterBottom
               variant="body2"
               color="text.secondary"
               sx={{ marginRight: "2rem" }}
             >
               {values.description}
             </Typography>
+            <Stack direction="row" spacing={1} flexWrap="wrap">
+              {values.technologies.map((el) => {
+                {
+                  return <Chip label={el} color="default" />;
+                }
+              })}
+            </Stack>
           </Stack>
-          <ButtonGroup sx={{ marginX: "auto" }}>
+          <ButtonGroup
+            sx={{
+              marginX: "auto",
+            }}
+          >
             <Button component="a" href={values.repoUrl} target="_blank">
               Repo
             </Button>
