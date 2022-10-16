@@ -16,23 +16,23 @@ let largeProjects = [
     description:
       "An events pages for users to post, search, bookmark and 'buy' tickets to latin SBK events",
   },
-  {
-    repoUrl: "https://github.com/frsargua/STAYHAVEN-APP",
-    deployed: "https://radiant-bayou-46133.herokuapp.com",
-    imageUrl: "stayHaven.png",
-    title: "StayHaven",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "HandlerBars",
-      "Node.js",
-      "BootStrap",
-      "Express.js",
-    ],
-    description:
-      "A booking, listing and search site for short stays. The app requires the user to log in to access all the app functionalities",
-  },
+  // {
+  //   repoUrl: "https://github.com/frsargua/STAYHAVEN-APP",
+  //   deployed: "https://radiant-bayou-46133.herokuapp.com",
+  //   imageUrl: "stayHaven.png",
+  //   title: "StayHaven",
+  //   technologies: [
+  //     "HTML",
+  //     "CSS",
+  //     "JavaScript",
+  //     "HandlerBars",
+  //     "Node.js",
+  //     "BootStrap",
+  //     "Express.js",
+  //   ],
+  //   description:
+  //     "A booking, listing and search site for short stays. The app requires the user to log in to access all the app functionalities",
+  // },
   {
     repoUrl: "https://github.com/RamiElsayed/film-go",
     deployed: "https://ramielsayed.github.io/film-go/",
