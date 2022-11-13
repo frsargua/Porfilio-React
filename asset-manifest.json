@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/Porfolio-React/static/css/main.19a9c732.css",
-    "main.js": "/Porfolio-React/static/js/main.39d73cf7.js",
+    "main.js": "/Porfolio-React/static/js/main.196549ce.js",
     "static/media/Screenshot 2022-06-01 at 17.40.54.png": "/Porfolio-React/static/media/Screenshot 2022-06-01 at 17.40.54.45861001a7dfe8e0b9a5.png",
     "static/media/d.png": "/Porfolio-React/static/media/d.45861001a7dfe8e0b9a5.png",
     "static/media/bg.jpg": "/Porfolio-React/static/media/bg.9222158131b7f3dce272.jpg",
     "static/media/avatar.png": "/Porfolio-React/static/media/avatar.5e8ee3777216e48fb935.png",
     "static/media/CV.pdf": "/Porfolio-React/static/media/CV.c5ccc1d5a7381be5c1cc.pdf",
     "static/media/teamprofile.png": "/Porfolio-React/static/media/teamprofile.0ca9aabce86eeb47bf4c.png",
+    "static/media/veritas.png": "/Porfolio-React/static/media/veritas.15e5d7b1c985127e9312.png",
     "static/media/stayHaven.png": "/Porfolio-React/static/media/stayHaven.3f04c27b688c8185bc0e.png",
     "static/media/weather-app.png": "/Porfolio-React/static/media/weather-app.000ca0bff5d522377e37.png",
     "static/media/quizz-app.jpg": "/Porfolio-React/static/media/quizz-app.5ca822f0af959896f793.jpg",
@@ -34,10 +35,10 @@
     "static/media/css3.svg": "/Porfolio-React/static/media/css3.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/html.svg": "/Porfolio-React/static/media/html.e88a4e2612574766f9ee62254e4c0aab.svg",
     "main.19a9c732.css.map": "/Porfolio-React/static/css/main.19a9c732.css.map",
-    "main.39d73cf7.js.map": "/Porfolio-React/static/js/main.39d73cf7.js.map"
+    "main.196549ce.js.map": "/Porfolio-React/static/js/main.196549ce.js.map"
   },
   "entrypoints": [
     "static/css/main.19a9c732.css",
-    "static/js/main.39d73cf7.js"
+    "static/js/main.196549ce.js"
   ]
 }
