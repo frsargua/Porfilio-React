@@ -14,25 +14,17 @@ let largeProjects = [
       "GraphQL",
     ],
     description:
-      "An events pages for users to post, search, bookmark and 'buy' tickets to latin SBK events",
+      "An events pages for users to post, search, bookmark and register to latin events",
   },
-  // {
-  //   repoUrl: "https://github.com/frsargua/STAYHAVEN-APP",
-  //   deployed: "https://radiant-bayou-46133.herokuapp.com",
-  //   imageUrl: "stayHaven.png",
-  //   title: "StayHaven",
-  //   technologies: [
-  //     "HTML",
-  //     "CSS",
-  //     "JavaScript",
-  //     "HandlerBars",
-  //     "Node.js",
-  //     "BootStrap",
-  //     "Express.js",
-  //   ],
-  //   description:
-  //     "A booking, listing and search site for short stays. The app requires the user to log in to access all the app functionalities",
-  // },
+  {
+    repoUrl: "https://github.com/frsargua/Film-Go-React",
+    deployed: "https://frsargua.github.io/Film-Go-React/#/",
+    imageUrl: "film-Go.png",
+    title: "Film-Go 2.0",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Material.UI", "Vite"],
+    description:
+      "A movie search website to bookmark, and search movies by genre and name. NEW: This version implements, local storage and react context.",
+  },
   {
     repoUrl: "https://github.com/RamiElsayed/film-go",
     deployed: "https://ramielsayed.github.io/film-go/",
@@ -47,7 +39,7 @@ let largeProjects = [
       "Express.js",
     ],
     description:
-      "A movie seach website to bookmark, search by genre and name. App is supported by IMDB-API",
+      "A movie search website to bookmark, and search movies by genre and name.",
   },
 ];
 let smallProjects = [
@@ -65,13 +57,12 @@ let smallProjects = [
       "BootStrap",
       "Express.js",
     ],
-    description:
-      "A terminal app to create a html page containing the members of a team and their positions ",
+    description: "A blog website for sharing, commenting and liking ideas. ",
   },
   {
     repoUrl: "https://github.com/frsargua/WeekSix_FS",
     deployed: "https://frsargua.github.io/WeekSix_FS/",
-    imageUrl: "wheather-app.png",
+    imageUrl: "weather-app.png",
     title: "Weather App",
     technologies: ["HTML", "CSS", "JavaScript", "BootStrap"],
     description:
