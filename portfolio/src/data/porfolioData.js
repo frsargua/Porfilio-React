@@ -23,7 +23,7 @@ let largeProjects = [
     title: "Film-Go 2.0",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Material.UI", "Vite"],
     description:
-      "A movie search website to bookmark, and search movies by genre and name. NEW: This version implements, local storage and react context.",
+      "A movie search website to bookmark, and search movies by genre and name. NEW: Local storage and react context.",
   },
   {
     repoUrl: "https://github.com/RamiElsayed/film-go",
