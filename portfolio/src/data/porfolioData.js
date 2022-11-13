@@ -44,6 +44,15 @@ let largeProjects = [
 ];
 let smallProjects = [
   {
+    repoUrl: "https://github.com/frsargua/VeritasAcademy",
+    deployed: "https://frsargua.github.io/VeritasAcademy/index.html",
+    imageUrl: "veritas.png",
+    title: "Veritas Academy",
+    technologies: ["HTML", "CSS", "JavaScript", "BootStrap", ,],
+    description:
+      "Landing page for an actual small tuition business. Currently waiting for more details from the owner.",
+  },
+  {
     repoUrl: "https://github.com/frsargua/Tech-BlogWebsite",
     deployed: "https://immense-basin-10320.herokuapp.com",
     imageUrl: "TechBlog-logo.png",
