@@ -4,6 +4,27 @@ let largeProjects = [
     deployed: "https://hidden-citadel-37214.herokuapp.com",
     imageUrl: "TapTapGo-logo.png",
     imageUrls: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-ff4b8.appspot.com/o/TapTapGo2%2FScreenshot%202023-01-13%20at%2013.37.42.png?alt=media&token=f839a9f4-345f-4e8d-8a37-478981d81cbf",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-ff4b8.appspot.com/o/TapTapGo2%2FScreenshot%202023-01-13%20at%2013.38.20.png?alt=media&token=371dd854-36b8-4635-b3cd-ee5fe436c128",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-ff4b8.appspot.com/o/TapTapGo2%2FScreenshot%202023-01-13%20at%2013.38.05.png?alt=media&token=0beb057d-9292-47ea-ab49-6ac7b3ceb5eb",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-ff4b8.appspot.com/o/TapTapGo2%2FScreenshot%202023-01-13%20at%2013.38.30.png?alt=media&token=d99df17e-3986-4137-bf89-179321dcc657",
+    ],
+    title: "🚧 TapTapGo 2 🚧👷🏽",
+    technologies: [
+      "React.js",
+      "Typescript",
+      "Node.js",
+      "MaterialUI",
+      "GraphQL",
+    ],
+    description:
+      "A enhanced version of taptapGo. Once finished it will allow users to pay for tickets, register their interest, bookmark and get QR code tickets and share their thoughts. Further down the line, i will add a management system for the organisers",
+  },
+  {
+    repoUrl: "https://github.com/RamiElsayed/tap-tap-go",
+    deployed: "https://hidden-citadel-37214.herokuapp.com",
+    imageUrl: "TapTapGo-logo.png",
+    imageUrls: [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-ff4b8.appspot.com/o/Screenshot%202023-01-13%20at%2012.12.22.png?alt=media&token=1091e714-b7fe-4a4c-950a-3f309246758c",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-ff4b8.appspot.com/o/Screenshot%202023-01-13%20at%2012.12.32.png?alt=media&token=a3e3b086-68fa-4a2a-92ea-565a13aa7403",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-ff4b8.appspot.com/o/Screenshot%202023-01-13%20at%2012.12.39.png?alt=media&token=b6b978cd-40d5-43e3-b386-95c8ec3f6a1a",
@@ -22,6 +43,7 @@ let largeProjects = [
     description:
       "An events pages for users to post, search, bookmark and register to latin events",
   },
+
   {
     repoUrl: "https://github.com/frsargua/Film-Go-React",
     deployed: "https://frsargua.github.io/Film-Go-React/#/",
