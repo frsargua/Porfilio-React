@@ -1,7 +1,6 @@
 let largeProjects = [
   {
-    repoUrl: "https://github.com/RamiElsayed/tap-tap-go",
-    deployed: "https://hidden-citadel-37214.herokuapp.com",
+    repoUrl: "https://github.com/frsargua/TapTapGo-2.0",
     imageUrl: "TapTapGo-logo.png",
     imageUrls: [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-ff4b8.appspot.com/o/TapTapGo2%2FScreenshot%202023-01-13%20at%2013.37.42.png?alt=media&token=f839a9f4-345f-4e8d-8a37-478981d81cbf",
