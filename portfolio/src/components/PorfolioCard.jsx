@@ -10,10 +10,11 @@ import {
 } from "@mui/material";
 import { Stack } from "@mui/system";
 import React from "react";
+import ImageCarousel from "./ImageCarousel";
 
 export default function PorfolioCard({ values }) {
   return (
-    <Grid item xs={12} md={6} lg={4} component="div" height={{ xs: "490px" }}>
+    <Grid item xs={12} md={6} lg={6} component="div" height={{ xs: "600px" }}>
       <Card
         sx={{
           height: "100%",
@@ -30,15 +31,16 @@ export default function PorfolioCard({ values }) {
           }}
         >
           <Stack>
-            <CardMedia
+            <ImageCarousel images={values.imageUrls} />
+            {/* <CardMedia
               component="img"
-              height="160px"
+              height="60px"
               image={require("../images/" + values.imageUrl)}
               alt="green iguana"
               sx={{ marginBottom: "1rem", objectFit: "contain" }}
-            />
+            /> */}
             <Typography
-              gutterBottom
+              sx={{ my: "1rem" }}
               variant="h5"
               component="h3"
               textAlign="center"

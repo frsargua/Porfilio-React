@@ -7,7 +7,7 @@ import { Grid, Stack, Typography } from "@mui/material";
 export default function Porfolio() {
   return (
     <>
-      <Container className="block--top__1">
+      <Container maxWidth="xl" className="block--top__1">
         <Stack alignItems="center">
           <Typography
             variant="h2"
